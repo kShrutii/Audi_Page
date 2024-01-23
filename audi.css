@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: inherit; */
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    /* we have to use the page slowly scrolling for click on the link */
+}
+/* navbar css */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 80px;
+}
+.logo_imgs{
+    width: 70px;
+    margin-right: 30px;
+}
+.search img{
+    width: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0px 10px;
+    color: rgba(106, 98, 98, 0.953);
+}
+.navbar a:hover{
+    color: black;
+}
+/* navbar css */
+
+/* hero css */
+.hero{
+display: flex;
+    /* BACKGROUND IMAGES IN CSS */
+    /* if you want to background images for contents we using this syntax */
+    background: linear-gradient(rgba(0, 0, 0, 0.678) 5%,transparent) ,url("../Project_Audi/images/2cars.jpg");
+    /* vh is viewport b'coz in css we not using % i.e. ex.-height:100% */
+    height: 88vh;
+    background-position: center;
+    background-size: cover;
+
+    /* this image fixed but content that scrolled */
+    background-attachment: fixed;
+}
+.content{
+    color: white;
+    padding: 30px 0px 0px 50px;
+}
+.titile p{
+    font-size: 48px;
+}
+.description p{
+    font-size: 22px;
+    margin: 10px 0px;
+}
+#btn1{
+    background-color: white;
+    color: black;
+    padding: 14px 30px;
+    border: none;
+    font-size: 16px;
+}
+#btn1:hover{
+    background-color: rgba(220, 220, 220, 0.485);
+}
+#btn2{
+    background-color: transparent;
+    color:white;
+    border: 1px solid white;
+    font-size: 16px;
+    padding: 14px 35px;
+}
+#btn2:hover{
+    border-color: rgba(220, 220, 220, 0.303);
+    color: black;
+}
+/* hero css */
+
+/* models css */
+.models_container{
+    padding-bottom: 100px;
+}
+.header{
+    padding: 20px 70px;
+}
+.model{
+    text-align: center;
+    cursor: pointer;
+}
+.model img{
+    width: 250px;
+}
+.models_list{
+    display: flex;
+}
+.model a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0px 10px;
+    color: black;
+}
+.model:hover{
+    text-decoration:underline;
+    font-weight: bold;
+}
+.model:hover img{
+    transform: scale(1.07);
+}
+.model img{
+    transition: 0.5s;
+}
+/* models css */
+/* virtual showroom css */
+.virtual_showroom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 115px 0px;
+}
+.virtual_showroom img{
+    height: 570px;
+    width: 570px;
+}
+.virtual_showroom h1{
+    font-size: 42px;
+}
+.virtual_showroom button{
+    border: 1px solid black;
+    background-color: white;
+    padding: 16px 70px;
+    font-size: 18px;
+}
+.virtual_image{
+    width: 50%;
+    text-align: right;
+}
+.virtual_content{
+    width: 50%;
+    text-align:left ;
+    margin-left: 50px;
+}
+.virtual_content:hover button{
+    color: rgba(45, 42, 42, 0.352);
+    border-color: rgba(45, 42, 42, 0.352);
+}
+/* virtual showroom css */
+/* navigators css */
+.navigators{
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+
+    /* this icon fixed but content scrolled in css */
+    position: fixed;
+    top: 80%;
+    left: 90%;
+
+}
